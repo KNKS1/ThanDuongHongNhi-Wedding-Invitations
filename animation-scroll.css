@@ -1,0 +1,76 @@
+/* Hiệu ứng Scroll Animation ấn tượng với keyframes */
+.scroll-animation {
+    opacity: 0;
+    transform: translateY(40px) scale(0.95);
+  }
+  .scroll-animation.animate {
+    animation: fadeInUp 0.7s cubic-bezier(0.23, 1, 0.32, 1) forwards;
+  }
+  @keyframes fadeInUp {
+    0% {
+      opacity: 0;
+      transform: translateY(40px) scale(0.95);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0) scale(1);
+    }
+  }
+
+  /* animation.css */
+
+/* Ban đầu, ẩn và dịch chuyển theo hướng cụ thể cho mỗi loại */
+.from-left {
+    opacity: 0;
+    transform: translateX(-50px);
+  }
+  
+  .from-right {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+  
+  /* Khi được animate, áp dụng keyframes từ trái/phải vào vị trí ban đầu */
+  .from-left.animate {
+    animation: fadeInFromLeft 0.7s cubic-bezier(0.23, 1, 0.32, 1) forwards;
+  }
+  
+  .from-right.animate {
+    animation: fadeInFromRight 0.7s cubic-bezier(0.23, 1, 0.32, 1) forwards;
+  }
+  
+  /* Keyframes cho animation từ bên trái */
+  @keyframes fadeInFromLeft {
+    from {
+      opacity: 0;
+      transform: translateX(-50px);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  
+  /* Keyframes cho animation từ bên phải */
+  @keyframes fadeInFromRight {
+    from {
+      opacity: 0;
+      transform: translateX(50px);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  
+  /* Keyframes cho hiệu ứng submenu slide down */
+@keyframes submenuSlideDown {
+  0% {
+    transform: translateY(-10px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}

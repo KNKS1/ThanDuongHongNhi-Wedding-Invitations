@@ -1,0 +1,186 @@
+@media (max-width: 480px) {
+    /* Navigation (Menu) */
+    nav.sticky{
+      padding: 5px 10px;
+      display: flex;
+      justify-content: space-between;
+    }
+    .nav-menu a {
+      font-size: 0.9rem;
+    }
+  
+    /* Banner (Hero Section) */
+    .hero {
+      height: 800px;          
+      aspect-ratio: unset;      
+    }
+    .hero-content {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      padding: 10px;            /* Giảm padding để nội dung gọn gàng hơn */
+      background: rgba(0, 0, 0, 0.5);  /* Nền tối hơn để chữ nổi bật */
+      text-align: center;
+      color: #fff;
+    }
+    .hero-content h1 {
+      font-size: 1.5rem;
+      margin-bottom: 2rem;
+    }
+    .hero-content p {
+      font-size: 1.4rem;
+      margin-top: 15rem;
+      margin-bottom: 10px;
+    }
+    .hero-prev,
+    .hero-next {
+      padding: 8px;
+      font-size: 1rem;
+      display: none;
+    }
+
+    .heart {
+      width: 100%;
+    }
+
+    .about { 
+      display: block; 
+    }
+    .heart-header-name {
+      margin-top: 14%;
+      font-size: 20px;
+      text-align: center;
+      font-family: great vibes, cursive;
+    }
+
+    footer {
+      height: 300px;
+    }
+    .event-card img {
+      max-width: 200px;
+      max-height: 150px;
+    }
+
+    .event-card h2 {
+      font-size: 25px;
+      margin-bottom: 10px;
+    }
+
+    .description-container {
+      padding: 20px 10px;
+    }
+
+    .event-card {
+      background: #fff;
+      border-radius: 8px;
+      padding: 20px;
+      max-width: 300px;
+      text-align: center;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    .gallery-grid img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      cursor: pointer;
+      border-radius: 4px;
+      transition: transform .2s;
+    }
+
+    figure img {
+      width: 200px;
+      height: 200px;
+    }
+
+    .modal-dialog {
+      width: 80%;
+      height: 70%;
+    }
+
+    .timers {
+      flex-direction: column;
+    }
+
+    .gallery-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+      gap: 20px;
+    }
+  }
+  
+
+  /* Responsive Adjustments cho những section khác */
+@media (max-width: 768px) {
+  .hero-content h1 { 
+    font-size: 2.5rem; 
+  }
+  .about { 
+    flex-direction: column; 
+  }
+  nav ul { 
+    flex-direction: column; 
+    align-items: center; 
+  }
+  nav li { 
+    margin: 8px 0; 
+  }
+}
+
+/* Responsive: trên mobile, tất cả về dạng cột */
+@media (max-width: 768px) {
+  .story {
+    flex-direction: column !important;
+  }
+  .story img {
+    width: 100%;
+  }
+}
+
+/* Container chính */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.scroll-animation {
+  will-change: transform, opacity;
+}
+
+@media (min-width: 600px) and (max-width: 1024px) {
+  /* CSS cho tablet ở đây */
+  .about {
+    flex-direction: column;
+    align-items: stretch
+  }
+  .hero {
+    height: 990px;
+    aspect-ratio: auto;
+  }
+  .hero-content p {
+    font-size: 4.2rem;
+    margin-bottom: 10px;
+    margin-top: 20%;
+  }
+  .hero-content h1 {
+    font-size: 2.0rem;
+  }
+  .hero-content a {
+    padding: 12px 25px;
+    color: #fff;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background 0.3s;
+    font-size: 20px;
+    font-weight: 600;
+  }
+  nav {
+    display: flex;
+    justify-content: space-between;
+  }
+  .hero-prev,.hero-next {
+    display: none;
+  }
+}

@@ -1,0 +1,595 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <link rel="icon" href="img/love.jpg" type="image/x-icon" >  <!-- Logo trình duyệt -->
+<title>Thiệp Mời Đám Cưới_Thân Dưỡng & Hồng Nhi</title>
+  
+  <!-- Font Awesome cho icon -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+  <!-- Google Fonts: Shantell Sans cho tiêu đề, Dosis cho nội dung văn bản -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Shantell+Sans:wght@400;600&family=Dosis:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="animation-scroll.css">
+  <link rel="stylesheet" href="responsive.css">
+  <script src="script.js"></script>
+  
+</head>
+<body>
+
+  <!-- Navigation Bar -->
+  <nav class="sticky ">
+    <button class="nav-toggle" aria-label="Toggle navigation">
+      <i class="fas fa-bars"></i>
+    </button>
+    <ul class="nav-menu">
+      <li><a href="#">Trang Chủ</a></li>
+      <li><a href="#about">Cặp Đôi</a></li>
+      <li><a href="#story">Câu Chuyện</a></li>
+      <li><a href="#events">Sự Kiện</a></li>
+      <li><a href="#gallery">Bộ Sưu Tập</a></li>
+    </ul>
+    <div class="logo">
+      <h1>D
+        <i class="fa-solid fa-heart" style="color: red;"></i>
+        N</h1>
+    </div>
+  </nav>
+
+  <!-- Hero Section với Slider và Nội Dung Banner -->
+  <section class="hero">
+    <div class="slides-wrapper">
+      <div class="slide" style="background-image: url('img/banner1_19_11zon.jpg'); background-position: center top 30%;"></div>
+      <div class="slide" style="background-image: url('img/banner2_20_11zon.jpg'); background-position: center top 60%;"></div>
+    </div>
+    <div class="hero-content">
+      <p>Let's get married!</p>
+      <h1>Thân Dưỡng & Hồng Nhi</h1>
+      <a>Thật vui vì được gặp và đón tiếp các bạn trong một dịp đặc biệt - Ngày cưới của chúng mình . Chúng mình muốn gửi đến bạn những lời cảm ơn sâu sắc nhất và để bạn biết rằng chúng mình rất hạnh phúc khi thấy bạn ở đó. Cảm ơn các bạn rất nhiều vì sự hiện diện cùng những lời chúc tốt đẹp mà bạn đã dành cho chúng mình nha!
+        
+
+      </a>
+    </div>
+    <button class="hero-prev" aria-label="Previous"><i class="fas fa-chevron-left"></i></button>
+    <button class="hero-next" aria-label="Next"><i class="fas fa-chevron-right"></i></button>
+  </section>
+
+  <section id="about">
+    <div class="container">
+      <h2>Cặp Đôi</h2>
+      <div class="about">
+        <!-- Hình bên trái (ví dụ: Chú Rể) -->
+        <figure class="scroll-animation from-left">
+          <img src="img/CHÚ RỂ_21.jpg" alt="Chú rể" width="300">
+          <figcaption>Phạm Thân Dưỡng</figcaption>
+          <!-- Mô tả (các phần "Xem thêm/Thu gọn" nếu có) -->
+          <div class="description-container">
+            <p class="short-text">
+              Là một người điềm đạm, ít nói, có phần lạnh lùng. Luôn đặt gia đình lên  hàng đầu.
+              <!-- Phần ẩn, sẽ hiện ra khi click -->
+              <span class="more-text">
+                Thích khám phá ẩm thực và thích nấu ăn cho người mình thương. Ước mơ có một gia đình nhỏ ấm cúng luôn tràn ngập tiếng cười.
+              </span>
+              <a href="#" class="show-box-link">Xem thêm</a>
+            </p>
+          </div>
+        </figure>
+  
+        <!-- Hình bên phải (ví dụ: Cô Dâu) -->
+        <figure class="scroll-animation from-right">
+          <img src="img/CÔ DÂU_22.jpg" alt="Cô dâu" width="300">
+          <figcaption>Trần Hồng Nhi</figcaption>
+          <div class="description-container">
+            <p class="short-text">
+              Là một người hay cười nhưng lại sống nội tâm và hay khóc thầm, thích nghe nhạc, thích đi du lịch.
+              <!-- Phần ẩn, sẽ hiện ra khi click -->
+              <span class="more-text">
+                Rất ương bướng, khó chiều nhưng dễ dỗ. Ước mơ có nhiều tiền để lo cho ba mẹ và đi du lịch khắp nơi. Mong muốn có GD nhỏ để yêu thương.
+              </span>
+              <a href="#" class="show-box-link">Xem thêm</a>
+            </p>
+          </div>
+        </figure>
+      </div>
+    </div>
+  </section>
+  
+
+<!-- Main Nội Dung: Câu Chuyện Tình Yêu -->
+<main class="container">
+  <h2>Câu Chuyện Tình Yêu</h2>
+  <!-- Lưu ý: Các bài viết ở đây được gắn thêm lớp "scroll-animation" để animation riêng từng cái -->
+  <section id="story">
+    <section class="story-section">
+      <!-- Story 1 -->
+      <article class="story scroll-animation">
+        <img src="placeholder.jpg" data-src="img/D23A3758_12_11zon.jpg" alt="Ảnh Cưới 1" class="lazy" width="300">
+        <div class="text">
+          <h2>Ngày Đầu Tiên</h2>
+          <p>September 2012</p>
+          <p>Chúng mình đã từng là bạn từ hồi cấp 3. Em là mối tình đầu của mình, cảm giác lần đầu gặp em tại sân trường năm ấy là khoảnh khắc chưa bao giờ mình quên.
+            Năm đó, tà áo dài thướt tha trong gió cùng nụ cười xao xuyến đã khiến mình bao lần thẩn thờ say đắm. Mình lấy hết dũng khí để tỏ tình và hạnh phúc đến nhường nào khi em đồng ý.</p>
+        </div>
+      </article>
+
+      <!-- Story 2 -->
+      <article class="story scroll-animation right">
+        <img src="placeholder.jpg" data-src="img/D23A3244_9_11zon.jpg" alt="Ảnh Cưới 2" class="lazy" width="300">
+        <div class="text">
+          <h2>Ngày Xa Nhau</h2>
+          <p>September 2015</p>
+          <p>Nhưng tình yêu gà bông không thắng nổi khoảng cách địa lý, mình vào Nam học tập và em ở lại Đà Nẵng để theo đuổi ước mơ. Và thế là chúng mình xa nhau. 
+            Trong 5 năm chúng mình không liên lạc, không nhắn tin, không gọi điện, mỗi người đều tất bật với những mục tiêu, những ước mơ riêng của đời mình, có một điều chưa bao giờ thay đổi — đó là mình vẫn luôn nhớ về em</p>
+        </div>
+      </article>
+
+      <!-- Story 3 -->
+      <article class="story scroll-animation">
+        <img src="placeholder.jpg" data-src="img/D23A3623_11_11zon.jpg" alt="Ảnh Cưới 3" class="lazy" width="300">
+        <div class="text">
+          <h2>Ngày Gặp Lại</h2>
+          <p>October, 2019</p>
+          <p>Tưởng chừng như chúng mình đã quên mất nhau nhưng khi gặp lại, tình cảm ấy vẫn vẹn nguyên như ngày đầu.</p>
+        </div>
+      </article>
+
+      <!-- Story 4 -->
+      <article class="story scroll-animation right">
+        <img src="placeholder.jpg" data-src="img/D23A3551_10_11zon.jpg" alt="Ảnh Cưới 4" class="lazy" width="300">
+        <div class="text">
+          <h2>Ngày Đính Hôn</h2>
+          <p>July, 2024</p>
+          <p>Hơn 12 năm tình bạn, và gần 6 năm tình yêu không phải là quãng thời gian quá dài, nhưng cũng không quá ngắn, đủ để chúng mình nhận ra nhiều điều. Cuối cùng ngày vui nhất của chúng mình cũng tới. Cảm ơn vì chúng ta đã luôn là một phần trong cuộc sống của nhau. Em và anh không chỉ là người yêu mà còn là tri kỷ, là bạn đồng hành. Kể từ Ngày hôm nay, em là Vợ, anh là Chồng và chúng ta là Một gia đình hạnh phúc.</p>
+        </div>
+      </article>
+
+      <!-- Story 5 -->
+      <article class="story scroll-animation">
+        <img src="placeholder.jpg" data-src="img/D23A2793_8_11zon.jpg" alt="Ảnh Cưới 5" class="lazy" width="300">
+        <div class="text">
+          <h2>Ngày Cưới</h2>
+          <p>June, 2025</p>
+          <p>Và hôm nay, khi viết lại những dòng này cho quá trình yêu và sắp về chung một nhà, mình vẫn rất cảm động. Chúng ta sẽ cùng viết tiếp hành trình yêu bằng những điều tuyệt vời nhất, em nhé<i class="fa-solid fa-heart" style="color: red;"></i></p>
+        </div>
+      </article>
+    </section>
+  </section>
+</main>
+
+
+
+<!-- The Big Day -->
+<section id="big-day" class="scroll-animation">
+  <div class="content">
+    <h2>The Big Day</h2>
+    <div class="timers">
+      
+      <div class="box" id="box-days">
+        <span class="number" id="days">00</span>
+        <span class="label">Ngày</span>
+      </div>
+      <div class="box" id="box-hours">
+        <span class="number" id="hours">00</span>
+        <span class="label">Giờ</span>
+      </div>
+      <div class="box" id="box-minutes">
+        <span class="number" id="minutes">00</span>
+        <span class="label">Phút</span>
+      </div>
+      <div class="box" id="box-seconds">
+        <span class="number" id="seconds">00</span>
+        <span class="label">Giây</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+  <!-- Events Section -->
+  <section id="events" class="events scroll-animation">
+    <div class="container">
+      <h2>Sự Kiện Cưới</h2>
+
+      <div class="events-grid">
+        <!-- Lễ Cưới Nhà Nữ -->
+        <article class="event-card">
+          <h3>Lễ Cưới Nhà Nữ</h3>
+          <img src="img/D23A3817.jpg" alt="Lễ cưới nhà nữ">
+          <p>
+            <i class="fa-solid fa-calendar-check"></i>
+            Ngày: 25/05/2025 <br> ÂL: 28/04/ẤT TỴ
+          </p>
+          <p>
+            <i class="fa-solid fa-clock"></i>
+            Thời gian: 10:30
+          </p>
+          <p>
+            <i class="fa-solid fa-location-dot"></i>
+            Địa điểm: Nhà Văn Hóa Khối Phố Phong Nhất
+          </p>
+          <a class="btn-map"
+             href="https://www.google.com/maps/place/Nh%C3%A0+v%C4%83n+h%C3%B3a+phong+nh%E1%BA%A5t/@15.9039599,108.1477111,13z/data=!4m10!1m2!2m1!1zTmjDoCBWxINuIEjDs2EgS2jhu5FpIFBo4buRIFBob25nIE5o4bqldCDEkWnhu4duIGFu!3m6!1s0x314205004281cf4d:0x86ddb8e1df5b2427!8m2!3d15.9039599!4d108.2239288!15sCjNOaMOgIFbEg24gSMOzYSBLaOG7kWkgUGjhu5EgUGhvbmcgTmjhuqV0IMSRaeG7h24gYW6SARBjb21tdW5pdHlfY2VudGVyqgFwEAEqEiIObmjDoCB2xINuIGjDs2EoQjIfEAEiGzIonYvOFtXFfysylk3GUeJ2NUH_8GMz4UFNpzI3EAIiM25ow6AgdsSDbiBow7NhIGto4buRaSBwaOG7kSBwaG9uZyBuaOG6pXQgxJFp4buHbiBhbuABAA!16s%2Fg%2F11vrdgh2jh?entry=ttu&g_ep=EgoyMDI1MDQyNy4xIKXMDSoASAFQAw%3D%3D"
+             target="_blank" rel="noopener noreferrer">
+            Xem bản đồ <i class="fa-solid fa-caret-right"></i>
+          </a>
+        </article>
+
+        <!-- Lễ Cưới Nhà Nam -->
+        <article class="event-card">
+          <h3>Lễ Cưới Nhà Nam</h3>
+          <img src="img/D23A2817_11zon.jpg" alt="Lễ cưới nhà nam">
+          <p>
+            <i class="fa-solid fa-calendar-check"></i>
+            Ngày: 01/06/2025 <br> ÂL: 06/05/ẤT TỴ
+          </p>
+          <p>
+            <i class="fa-solid fa-clock"></i>
+            Thời gian: 11:00
+          </p>
+          <p>
+            <i class="fa-solid fa-location-dot"></i>
+            Địa điểm: Nhà hàng Phú Vĩnh, 49 Trần Thị Lý, Vĩnh Điện, Quảng Nam
+          </p>
+          <a class="btn-map"
+             href="https://www.google.com/maps/place/Nh%C3%A0+h%C3%A0ng+Ph%C3%BA+V%C4%A9nh/@15.88958,108.244304,17z/data=!3m1!4b1!4m6!3m5!1s0x31420f84c385608f:0x61dfbf84e8c2e462!8m2!3d15.88958!4d108.2468789!16s%2Fg%2F119wp4r3w?entry=ttu&g_ep=EgoyMDI1MDQyMy4wIKXMDSoASAFQAw%3D%3D"
+             target="_blank" rel="noopener noreferrer">
+            Xem bản đồ <i class="fa-solid fa-caret-right"></i>
+          </a>
+        </article>
+      </div>
+    </div>
+  </section>
+
+
+
+  <!-- Gallery Section -->
+  <section id="gallery" class="scroll-animation">
+    <div class="container">
+      <h2>Album Kỉ Niệm</h2>
+      <div id="galleryGrid" class="gallery-grid">
+        <img src="img/D23A3560_11zon.jpg" alt="Ảnh 1">
+        <img src="img/D23A3887_11zon.jpg" alt="Ảnh 2">
+        <img src="img/D23A3636_11zon.jpg" alt="Ảnh 3">
+        <img src="img/9.jpg" alt="Ảnh 4">
+        <img src="img/ab.jpg" alt="Ảnh 5">
+        <img src="img/D23A3560_11zon.jpg" alt="Ảnh 6">
+        <img src="img/4.jpg" alt="Ảnh 7">
+        <img src="img/5.jpg" alt="Ảnh 8">
+        <img src="img/6.jpg" alt="Ảnh 9">
+        <img src="img/3.jpg" alt="Ảnh 10">
+        <img src="img/7.jpg" alt="Ảnh 11">
+        <img src="img/8.jpg" alt="Ảnh 12">
+        <img src="img/D23A3153_11zon.jpg" alt="Ảnh 13">
+        <img src="img/D23A3513_11zon.jpg" alt="Ảnh 14">
+        <img src="img/1.jpg" alt="Ảnh 15">
+        <img src="img/2.jpg" alt="Ảnh 16">
+        <img src="img/D23A3331_11zon.jpg" alt="Ảnh 17">
+      </div>
+      <button id="viewAllBtn">Xem Tất Cả Ảnh</button>
+    </div>
+  </section>
+
+  <!-- Lightbox -->
+  <div class="lb-overlay" id="lightbox">
+    <button class="lb-close" id="lbClose">&times;</button>
+    <button class="lb-prev" id="lbPrev">&#8249;</button>
+
+    <div class="lb-img-wrap">
+      <img id="lbCurrent" src="" alt="">
+      <img id="lbNext"    src="" alt="">
+    </div>
+
+    <button class="lb-next" id="lbNextBtn">&#8250;</button>
+    <div class="lb-thumbs" id="lbThumbs"></div>
+  </div>
+
+
+
+  <!-- Modal Hộp mừng cưới -->
+  <div id="gift-modal" class="modal">
+    <div class="modal-dialog">
+      <div class="modal-header">
+        <span class="modal-title">
+          <i class="fa-solid fa-sack-dollar"></i> Hộp mừng cưới
+        </span>
+        <button class="modal-close">&times;</button>
+      </div>
+      <div class="modal-body">
+        <div class="gift-container">
+          <div class="gift-card">
+            <h3>Mừng Cưới Đến Chú Rể</h3>
+            <div class="qr-wrapper">
+              <img src="img/qrCk2.png" alt="QR Chú Rể">
+            </div>
+            <ul class="bank-info">
+              <li><strong>Ngân hàng:</strong> TMCP Á Châu</li>
+              <li><strong>Tên TK:</strong> PHẠM THÂN DƯỠNG</li>
+              <li><strong>Số TK:</strong> 10835407</li>
+            </ul>
+          </div>
+          <div class="gift-card">
+            <h3>Mừng Cưới Đến Cô Dâu</h3>
+            <div class="qr-wrapper">
+              <img src="img/qrVk1.png" alt="QR Cô Dâu">
+            </div>
+            <ul class="bank-info">
+              <li><strong>Ngân hàng:</strong> TMCP Á Châu</li>
+              <li><strong>Tên TK:</strong> TRẦN HỒNG NHI</li>
+              <li><strong>Số TK:</strong> 13493987</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <p class="heart-header-name">Hồng Nhi & Thân Dưỡng</p>
+    </div>
+  </footer>
+
+
+   <!-- Floating Action Button Menu -->
+  
+   <div class="fab-menu">
+    <a href="donate.html" id="open-gift" class="fab-btn" title="Quyên góp">
+      <i class="fa-solid fa-sack-dollar"></i>
+    </a> 
+
+    <a href="rsvp.html" class="fab-btn" title="Xác nhận tham dự">
+      <i class="fa-solid fa-envelope-open-text"></i>
+    </a>
+  </div>
+<!-- Notification on load -->
+<div id="loadNotification" class="fab-tooltip">Xác nhận tham dự</div>
+
+
+  <!-- Audio và nút -->
+  <audio id="bg-music" src="audio/y2mate.com - Em Đồng Ý  I Do   Đức Phúc x 911 Lyrics Video  Điều anh ước muốn bây giờ ngay đây rồi.mp3" loop></audio>
+  <button id="music-toggle" class="music-button" aria-label="Bật/tắt nhạc">
+    <i id="music-icon" class="fa-solid fa-volume-xmark"></i>
+  </button>
+
+  <!-- Canvas vẽ trái tim -->
+  <canvas id="snow"></canvas>
+</body>
+
+<script>
+  const nav = document.querySelector("nav");
+
+  window.addEventListener("scroll", () => {
+    nav.classList.toggle("scrolled", window.scrollY > 50);
+  });
+</script>
+
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    // 1. Tính offset 34 ngày (33d + 24h)
+    const offsetMs = (34 * 24 * 3600) * 1000;
+  
+    // 2. Lấy target từ localStorage (nếu đã có), nếu chưa thì tạo mới và lưu
+    let target = localStorage.getItem('countdownTarget');
+    if (!target) {
+      target = Date.now() + offsetMs;
+      localStorage.setItem('countdownTarget', target);
+    } else {
+      target = parseInt(target, 10);
+    }
+  
+    // 3. Các phần tử hiển thị
+    const els = {
+      days:    document.getElementById('days'),
+      hours:   document.getElementById('hours'),
+      minutes: document.getElementById('minutes'),
+      seconds: document.getElementById('seconds'),
+    };
+    const boxes = {
+      days:    document.getElementById('box-days'),
+      hours:   document.getElementById('box-hours'),
+      minutes: document.getElementById('box-minutes'),
+      seconds: document.getElementById('box-seconds'),
+    };
+  
+    // 4. Hàm cập nhật mỗi giây
+    function tick() {
+      let diff = target - Date.now();
+      if (diff < 0) diff = 0;
+  
+      const d = Math.floor(diff / 86400000);
+      const h = Math.floor((diff % 86400000) / 3600000);
+      const m = Math.floor((diff % 3600000) / 60000);
+      const s = Math.floor((diff % 60000) / 1000);
+  
+      update('days', d);
+      update('hours', h);
+      update('minutes', m);
+      update('seconds', s);
+    }
+  
+    function update(key, val) {
+      const text = String(val).padStart(2, '0');
+      if (els[key].textContent !== text) {
+        els[key].textContent = text;
+        boxes[key].classList.add('pulse');
+        setTimeout(() => boxes[key].classList.remove('pulse'), 600);
+      }
+    }
+  
+    // 5. Khởi động
+    tick();
+    setInterval(tick, 1000);
+  });
+  </script>
+  
+
+  <script>
+    // gallery.js
+// Script for hiding initial gallery images and full lightbox functionality without duplication
+
+document.addEventListener('DOMContentLoaded', () => {
+  const gallery     = document.getElementById('galleryGrid');
+  const imgsAll     = Array.from(gallery.querySelectorAll('img'));
+  const initialCount = 6;
+
+  // Assign dataset-index to each gallery image
+  imgsAll.forEach((img, i) => {
+    img.dataset.index = i;
+  });
+
+  // Hide gallery images beyond the initial count
+  imgsAll.forEach((img, i) => {
+    if (i >= initialCount) img.style.display = 'none';
+  });
+
+  // Lightbox elements
+  const btnAll   = document.getElementById('viewAllBtn');
+  const lightbox = document.getElementById('lightbox');
+  const imgCur   = document.getElementById('lbCurrent');
+  const imgNext  = document.getElementById('lbNext');
+  const btnClose = document.getElementById('lbClose');
+  const btnPrev  = document.getElementById('lbPrev');
+  const btnNextB = document.getElementById('lbNextBtn');
+  const thumbs   = document.getElementById('lbThumbs');
+
+  // Build full source list for lightbox
+  const srcs = imgsAll.map(i => i.src);
+  let idx = 0, isAnimating = false;
+
+  // Clear any existing thumbnails to prevent duplicates
+  thumbs.innerHTML = '';
+  srcs.forEach((src, i) => {
+    const thumb = document.createElement('img');
+    thumb.src = src;
+    thumb.dataset.index = i;
+    thumb.addEventListener('click', () => open(i));
+    thumbs.appendChild(thumb);
+  });
+
+  function updateThumbs() {
+    thumbs.querySelectorAll('img').forEach(t => {
+      t.classList.toggle('active', +t.dataset.index === idx);
+    });
+  }
+
+  function open(i) {
+    idx = i;
+    imgCur.src = srcs[idx];
+    imgNext.src = '';
+    imgCur.style.transform = 'translateX(0)';
+    imgNext.style.transform = 'translateX(100%)';
+    lightbox.classList.add('show');
+    updateThumbs();
+  }
+
+  function slideTo(newIndex) {
+    if (isAnimating || newIndex === idx) return;
+    isAnimating = true;
+    const dir = (newIndex > idx || (newIndex === 0 && idx === srcs.length - 1)) ? 1 : -1;
+    imgNext.src = srcs[newIndex];
+    imgNext.style.transition = 'none';
+    imgNext.style.transform = `translateX(${100 * dir}%)`;
+
+    requestAnimationFrame(() => {
+      imgNext.style.transition = 'transform 0.5s ease-in-out';
+      imgCur.style.transition = 'transform 0.5s ease-in-out';
+      imgCur.style.transform = `translateX(${-100 * dir}%)`;
+      imgNext.style.transform = 'translateX(0)';
+    });
+
+    setTimeout(() => {
+      idx = newIndex;
+      imgCur.src = srcs[idx];
+      imgCur.style.transition = 'none';
+      imgNext.style.transition = 'none';
+      imgCur.style.transform = 'translateX(0)';
+      imgNext.style.transform = `translateX(${100 * dir}%)`;
+
+      setTimeout(() => {
+        imgCur.style.transition = 'transform 0.5s ease-in-out';
+        imgNext.style.transition = 'transform 0.5s ease-in-out';
+        isAnimating = false;
+        updateThumbs();
+      }, 20);
+    }, 550);
+  }
+
+  function prev() { slideTo((idx + srcs.length - 1) % srcs.length); }
+  function next() { slideTo((idx + 1) % srcs.length); }
+  function closeLb() { lightbox.classList.remove('show'); }
+
+  // Bind events
+  imgsAll.forEach(el => el.addEventListener('click', e => open(+el.dataset.index)));
+  btnAll.addEventListener('click', () => open(0));
+  btnClose.addEventListener('click', closeLb);
+  btnPrev.addEventListener('click', prev);
+  btnNextB.addEventListener('click', next);
+  imgCur.addEventListener('click', next);
+  lightbox.addEventListener('click', e => { if (e.target === lightbox) closeLb(); });
+  document.addEventListener('keydown', e => {
+    if (!lightbox.classList.contains('show')) return;
+    if (e.key === 'ArrowLeft') prev();
+    if (e.key === 'ArrowRight') next();
+    if (e.key === 'Escape') closeLb();
+  });
+});
+
+  </script>
+
+  <script>
+  // audio.js
+// Xử lý tự động phát nhạc nền + nút bật/tắt nhạc
+document.addEventListener('DOMContentLoaded', function () {
+  const btn   = document.getElementById('music-toggle');
+  const audio = document.getElementById('bg-music');
+  const icon  = document.getElementById('music-icon');
+  let isPlaying = false;
+  let hasInteracted = false; // Kiểm tra đã tương tác chưa
+
+  if (!audio || !btn || !icon) {
+    console.error('Không tìm thấy phần tử audio hoặc nút toggle.');
+    return;
+  }
+
+  // Hàm phát nhạc sau tương tác
+  const startMusic = () => {
+    if (!hasInteracted) {
+      audio.play().then(() => {
+        isPlaying = true;
+        icon.classList.replace('fa-volume-xmark', 'fa-volume-high');
+      }).catch(error => {
+        console.warn('Không thể tự động phát nhạc:', error);
+      });
+      hasInteracted = true; // Đánh dấu đã tương tác
+    }
+  };
+
+  // Nghe sự kiện click hoặc touch anywhere
+  document.addEventListener('click', startMusic, { once: true });
+  document.addEventListener('touchstart', startMusic, { once: true });
+
+  // Xử lý nút bật/tắt nhạc
+  btn.addEventListener('click', function (e) {
+    e.stopPropagation(); // Ngăn nút toggle cũng kích hoạt startMusic
+    if (isPlaying) {
+      audio.pause();
+      icon.classList.replace('fa-volume-high', 'fa-volume-xmark');
+    } else {
+      audio.play().catch(err => {
+        console.warn('Không thể phát nhạc:', err);
+      });
+      icon.classList.replace('fa-volume-xmark', 'fa-volume-high');
+    }
+    isPlaying = !isPlaying;
+  });
+});
+
+
+  </script>
+</html>

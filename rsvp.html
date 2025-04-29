@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Xác nhận tham dự</title>
+   <!-- Font Awesome cho icon -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <style>
+    /* reset */
+    * { box-sizing: border-box; margin:0; padding:0; }
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: #f0f4f8;
+      color: #333;
+      line-height: 1.5;
+    }
+    a { color: #007bff; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+
+    /* header */
+    .rsvp-header {
+      background: #e8f0f4;
+      text-align: center;
+      padding: 40px 20px;
+    }
+    .rsvp-header img {
+      width: 120px;
+      height: 120px;
+      object-fit: cover;
+      border-radius: 50%;
+      border: 3px solid #e74c3c;
+      margin-bottom: 16px;
+    }
+    .rsvp-header h1 {
+      font-size: 1.8rem;
+      margin-bottom: 8px;
+      letter-spacing: 1px;
+    }
+    .rsvp-header p {
+      font-size: 1rem;
+      color: #555;
+    }
+    .rsvp-header .names {
+      font-weight: bold;
+      font-size: 1.1rem;
+      margin-top: 6px;
+    }
+    .rsvp-header .names i {
+      color: #e74c3c;
+      margin: 0 4px;
+    }
+
+    /* form */
+    .rsvp-form {
+      max-width: 600px;
+      margin: 30px auto;
+      background: #fff;
+      padding: 24px;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+    .rsvp-form .inputs {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 16px;
+      margin-bottom: 20px;
+    }
+    .rsvp-form input[type="text"],
+    .rsvp-form textarea {
+      width: 100%;
+      padding: 10px 12px;
+      font-size: 1rem;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      resize: vertical;
+    }
+    .rsvp-form fieldset {
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      padding: 12px 16px;
+      margin-bottom: 20px;
+    }
+    .rsvp-form legend {
+      padding: 0 4px;
+      font-weight: bold;
+    }
+    .rsvp-form .checkbox-group {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px 24px;
+      margin-top: 8px;
+    }
+    .rsvp-form .checkbox-group label {
+      font-size: 0.95rem;
+      display: flex;
+      align-items: center;
+    }
+    .rsvp-form .checkbox-group input {
+      margin-right: 6px;
+      transform: scale(1.1);
+    }
+
+    .rsvp-form button[type="submit"] {
+      width: 100%;
+      padding: 14px;
+      background: #e74c3c;
+      color: #fff;
+      border: none;
+      font-size: 1rem;
+      border-radius: 4px;
+      cursor: pointer;
+      transition: background .3s;
+    }
+    .rsvp-form button[type="submit"]:hover {
+      background: #c0392b;
+    }
+
+    .rsvp-form .back-link {
+      display: block;
+      text-align: center;
+      margin-top: 16px;
+      font-size: 0.9rem;
+    }
+
+    /* responsive */
+    @media (max-width: 500px) {
+      .rsvp-form .inputs {
+        grid-template-columns: 1fr;
+      }
+      .rsvp-header img {
+        width: 100px; height: 100px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header class="rsvp-header">
+    <img src="img/ưdofegodh.jpg" alt="Hồng Nhi & Thân Dưỡng">
+    <h1>XÁC NHẬN THAM DỰ</h1>
+    <p>Đám cưới của</p>
+    <p class="names">Hồng Nhi <i class="fa-solid fa-heart" style="color: red;"></i> Thân Dưỡng</p>
+  </header>
+
+  <form class="rsvp-form" action="https://formspree.io/f/manoqngr" method="POST">
+    <div class="inputs">
+      <input type="text" name="name" placeholder="Nhập tên của bạn" required>
+      <textarea name="message" rows="4" placeholder="Nhập lời chúc phúc của bạn" required></textarea>
+    </div>
+
+    <fieldset>
+      <legend>Chọn sự kiện tham dự</legend>
+      <div class="checkbox-group">
+        <label><input type="checkbox" name="events[]" value="le-cuoi-nu"> Lễ cưới nhà nữ</label>
+        <label><input type="checkbox" name="events[]" value="tiec-cuoi-nu"> Tiệc cưới nhà nữ</label>
+        <label><input type="checkbox" name="events[]" value="le-cuoi-nam"> Lễ cưới nhà nam</label>
+        <label><input type="checkbox" name="events[]" value="tiec-cuoi-nam"> Tiệc cưới nhà nam</label>
+      </div>
+    </fieldset>
+
+    <button type="submit">Xác nhận<br><small>Confirm</small></button>
+    <a href="index.html" class="back-link">← Về website đám cưới</a>
+  </form>
+
+</body>
+</html>
